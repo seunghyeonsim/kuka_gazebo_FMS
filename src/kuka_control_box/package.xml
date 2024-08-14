@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>kuka_control_box</name>
+  <version>0.0.0</version>
+  <description>Kuka control box package</description>
+  <maintainer email="example@domain.com">Your Name</maintainer>
+  <license>Apache-2.0</license> <!-- 하이픈 추가 -->
+
+  <!-- 빌드 도구 의존성 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- 빌드 의존성 -->
+  <build_depend>rclcpp</build_depend>
+  <build_depend>eigen3_cmake_module</build_depend>
+  <build_depend>Eigen3</build_depend>
+  <build_depend>kuka_control_box_srvs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend> 
+  <build_depend>trajectory_msgs</build_depend> <!-- 추가: trajectory_msgs 의존성 추가 -->
+
+  <!-- 실행 의존성 -->
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>Eigen3</exec_depend>
+  <exec_depend>kuka_control_box_srvs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>trajectory_msgs</exec_depend> <!-- 추가: trajectory_msgs 의존성 추가 -->
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
