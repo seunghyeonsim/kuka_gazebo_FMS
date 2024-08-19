@@ -1,0 +1,20 @@
+sudo apt-get install libeigen3-dev
+pip install --upgrade setuptools
+sudo apt-get install ros-humble-tf-transformations
+sudo pip3 install transforms3d
+pip install numpy scipy
+
+sudo apt-get update
+sudo apt-get install ros-humble-tf2 ros-humble-tf2-ros ros-humble-tf2-geometry-msgs
+pip install setuptools==58.0.4
+sudo apt-get install ros-humble-gazebo-ros-pkgs ros-humble-gazebo-plugins
+
+
+apriltag github
+https://github.com/TAMS-Group/tams_apriltags/tree/master
+
+apriltag :
+sudo rosdep init
+rosdep update
+cd ~/kuka_ws
+rosdep install --from-paths src --ignore-src -r -y

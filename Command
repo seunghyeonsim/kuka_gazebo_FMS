@@ -1,0 +1,21 @@
+ros2 launch kuka_description gazebo_rviz.launch.py 
+
+ros2 launch kuka_controller controller.launch.py 
+
+ros2 launch kuka_apriltag spawn_env.launch.py
+
+environment = gazebo_rviz + controller + taskspace.
+
+ros2 launch kuka_description kuka_bringup.launch.py 
+
+
+
+
+ros2 run kuka_task_client task_client 
+Enter x (mm): 2200
+Enter y (mm): 400
+Enter z (mm): 1300
+Enter roll (degrees): 0
+Enter pitch (degrees): 0
+Enter yaw (degrees): 0.1
+
