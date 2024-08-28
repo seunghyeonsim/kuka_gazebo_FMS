@@ -1,8 +1,0 @@
-# KukaTransformInput.srv
-
-# Request
-geometry_msgs/TransformStamped target_transform
-
----
-# Response
-bool success
